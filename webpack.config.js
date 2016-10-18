@@ -10,6 +10,7 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Test: 'app/components/Test.jsx',
       Data: 'app/components/Data.jsx',
+      TextToolTip: 'app/components/TextToolTip.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

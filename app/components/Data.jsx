@@ -1,5 +1,4 @@
 var React = require('react');
-
 var styleOrig = {
     fontSize: 12  
 };
@@ -8,11 +7,11 @@ var styleTrans = {
     color: "red"
 };
 
-
 var Data = React.createClass({
     render: function() {
         return (
             <div>
+
 <p className="orig" style={styleOrig}>
 Scope is the set of rules that determines where and how a variable (identifier) can be looked-up. This look-up may be for the<br />
 <span className="translated" style={styleTrans}>skoʊp əz ðə  sɛt əv rulz  ðət  dəˈtɜrmənz wɛr   ənd haʊ ə ˈvɛriəbəl (aɪˈdɛntəˌfaɪər) kən bi lʊkt-ʌp. ðɪs lʊk-ʌp meɪ bi fər ði</span><br /> 
@@ -58,8 +57,7 @@ implicitly-created global of that name (if not in "Strict Mode" [^note-strictmod
 <span className="translated" style={styleTrans}>ɪmˈplɪsətli-kriˈeɪtəd ˈgloʊbəl əv ðət neɪm (ɪf nɑt ɪn "strɪkt moʊd" [^noʊt-strictmode]), ɔr ə ReferenceError (ɪf ɪn "strɪkt moʊd" 
 [^note-strictmode]).</span>
 </p>
-    
-            </div>
+</div>
       );
     }
 });
@@ -72,11 +70,6 @@ module.exports = Data;
 
 
 /*
-<p className="orig">Scope is the set of rules that determines where and how a variable 
-            </p>
-            <p className="translated">skoʊp əz ðə  sɛt əv rulz  ðət  dəˈtɜrmənz wɛr   ənd haʊ ə ˈvɛriəbəl</p>
-    
     <span title="rain: listen to American pronunciation" data-src-mp3="http://dictionary.cambridge.org/media/english/us_pron/r/rai/rain_/rain.mp3" data-src-ogg="http://dictionary.cambridge.org/media/english/us_pron_ogg/r/rai/rain_/rain.ogg" class="circle circle-btn sound audio_play_button us"><i class="fcdo fcdo-volume-up">​</i>rain</span>
-
-<a href="https://ssl.gstatic.com/dictionary/static/sounds/de/0/scope.mp3">Scope</a>        
+    <a href="https://ssl.gstatic.com/dictionary/static/sounds/de/0/scope.mp3">Scope</a>        
 */

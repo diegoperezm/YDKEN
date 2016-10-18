@@ -19756,54 +19756,69 @@
 
 	var React = __webpack_require__(1);
 	var Data = __webpack_require__(412);
+	var TextToolTip = __webpack_require__(413);
 
 
 	var Main = React.createClass({
-	  displayName: "Main",
+	    displayName: "Main",
 
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
-	        _reactBootstrap.Navbar,
-	        null,
-	        React.createElement(
-	          _reactBootstrap.Navbar.Header,
-	          null,
-	          React.createElement(
-	            _reactBootstrap.Navbar.Brand,
+	    render: function render() {
+	        return React.createElement(
+	            "div",
 	            null,
 	            React.createElement(
-	              "a",
-	              { href: "#" },
-	              "React-Bootstrap"
+	                _reactBootstrap.Navbar,
+	                null,
+	                React.createElement(
+	                    _reactBootstrap.Navbar.Header,
+	                    null,
+	                    React.createElement(
+	                        _reactBootstrap.Navbar.Brand,
+	                        null,
+	                        React.createElement(
+	                            "a",
+	                            { href: "#" },
+	                            "React-Bootstrap"
+	                        )
+	                    )
+	                ),
+	                React.createElement(_reactBootstrap.Nav, null),
+	                React.createElement(
+	                    _reactBootstrap.Navbar.Form,
+	                    { pullRight: true },
+	                    React.createElement(
+	                        _reactBootstrap.FormGroup,
+	                        null,
+	                        React.createElement(_reactBootstrap.FormControl, { type: "text", placeholder: "Search" })
+	                    ),
+	                    ' ',
+	                    "  ",
+	                    React.createElement(
+	                        _reactBootstrap.Button,
+	                        { type: "submit" },
+	                        "Search"
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                _reactBootstrap.Grid,
+	                null,
+	                React.createElement(
+	                    _reactBootstrap.Row,
+	                    null,
+	                    React.createElement(
+	                        _reactBootstrap.Col,
+	                        { xs: 12 },
+	                        React.createElement(
+	                            _reactBootstrap.Jumbotron,
+	                            null,
+	                            React.createElement(TextToolTip, null)
+	                        )
+	                    )
+	                )
 	            )
-	          )
-	        ),
-	        React.createElement(_reactBootstrap.Nav, null),
-	        React.createElement(
-	          _reactBootstrap.Navbar.Form,
-	          { pullRight: true },
-	          React.createElement(
-	            _reactBootstrap.FormGroup,
-	            null,
-	            React.createElement(_reactBootstrap.FormControl, { type: "text", placeholder: "Search" })
-	          ),
-	          React.createElement(
-	            _reactBootstrap.Button,
-	            { type: "submit" },
-	            "Search"
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        _reactBootstrap.Jumbotron,
-	        null,
-	        React.createElement(Data, null)
-	      )
-	    );
-	  }
+	        );
+	    }
 	});
 
 	module.exports = Main;
@@ -38594,7 +38609,6 @@
 	"use strict";
 
 	var React = __webpack_require__(1);
-
 	var styleOrig = {
 	    fontSize: 12
 	};
@@ -38742,13 +38756,244 @@
 	module.exports = Data;
 
 	/*
-	<p className="orig">Scope is the set of rules that determines where and how a variable 
-	            </p>
-	            <p className="translated">skoʊp əz ðə  sɛt əv rulz  ðət  dəˈtɜrmənz wɛr   ənd haʊ ə ˈvɛriəbəl</p>
-	    
 	    <span title="rain: listen to American pronunciation" data-src-mp3="http://dictionary.cambridge.org/media/english/us_pron/r/rai/rain_/rain.mp3" data-src-ogg="http://dictionary.cambridge.org/media/english/us_pron_ogg/r/rai/rain_/rain.ogg" class="circle circle-btn sound audio_play_button us"><i class="fcdo fcdo-volume-up">​</i>rain</span>
+	    <a href="https://ssl.gstatic.com/dictionary/static/sounds/de/0/scope.mp3">Scope</a>        
+	*/
 
-	<a href="https://ssl.gstatic.com/dictionary/static/sounds/de/0/scope.mp3">Scope</a>        
+/***/ },
+/* 413 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _reactBootstrap = __webpack_require__(160);
+
+	var React = __webpack_require__(1);
+
+
+	var LinkWithTooltip = React.createClass({
+	  displayName: 'LinkWithTooltip',
+	  render: function render() {
+	    var tooltip = React.createElement(
+	      _reactBootstrap.Tooltip,
+	      { id: this.props.id },
+	      this.props.tooltip
+	    );
+	    return React.createElement(
+	      _reactBootstrap.OverlayTrigger,
+	      {
+	        overlay: tooltip, placement: 'top',
+	        delayShow: 1, delayHide: 5
+	      },
+	      React.createElement(
+	        'a',
+	        { href: this.props.href },
+	        this.props.children
+	      )
+	    );
+	  }
+	});
+
+	var text = React.createElement(
+	  'p',
+	  null,
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'sko\u028Ap'
+	      ), href: 'https://ssl.gstatic.com/dictionary/static/sounds/de/0/scope.mp3', id: 'tooltip-0' },
+	    'Scope'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259z'
+	      ), id: 'tooltip-1' },
+	    'is'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259'
+	      ), id: 'tooltip-2' },
+	    'the'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        's\u025Bt'
+	      ), id: 'tooltip-3' },
+	    'set'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259v'
+	      ), id: 'tooltip-4' },
+	    'of'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'rulz'
+	      ), id: 'tooltip-5' },
+	    'rules'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259t'
+	      ), id: 'tooltip-6' },
+	    'that'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'd\u0259\u02C8t\u025Crm\u0259nz'
+	      ), id: 'tooltip-7' },
+	    'determines'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'w\u025Br'
+	      ), id: 'tooltip-8' },
+	    'where'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-9' },
+	    'and'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ha\u028A'
+	      ), id: 'tooltip-10' },
+	    'how'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259'
+	      ), id: 'tooltip-11' },
+	    'a'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8v\u025Bri\u0259b\u0259l'
+	      ), id: 'tooltip-12' },
+	    'variable'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(a\u026A\u02C8d\u025Bnt\u0259\u02CCfa\u026A\u0259r)'
+	      ), id: 'tooltip-13' },
+	    '(identifier)'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'k\u0259n'
+	      ), id: 'tooltip-14' },
+	    'can'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'bi'
+	      ), id: 'tooltip-15' },
+	    'be'
+	  ),
+	  '\xA0',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'l\u028Akt-\u028Cp.'
+	      ), id: 'tooltip-16' },
+	    'looked-up.'
+	  ),
+	  '\xA0'
+	);
+
+	var TextToolTip = React.createClass({
+	  displayName: 'TextToolTip',
+
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      text
+	    );
+	  }
+	});
+
+	module.exports = TextToolTip;
+
+	/*
+
+	  <LinkWithTooltip tooltip="Default tooltip" href="#" id="tooltip-1">you probably</LinkWithTooltip>
+	  
+	  <LinkWithTooltip tooltip={<span>Another <strong>tooltip</strong></span>} href="#" id="tooltip-2">have a</LinkWithTooltip>
+	  
+	  <LinkWithTooltip tooltip="Another one here too" href="#" id="tooltip-3">whatever keytar</LinkWithTooltip>
+	  
+	  <LinkWithTooltip tooltip="The last tip!" href="#" id="tooltip-4">twitter handle</LinkWithTooltip>
+	  
+	);
 	*/
 
 /***/ }

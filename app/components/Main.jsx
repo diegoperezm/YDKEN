@@ -1,13 +1,12 @@
 var React = require("react");
 var Data = require("Data");
-import { Nav, Navbar, NavItem, FormGroup, FormControl , Button,  Jumbotron } from 'react-bootstrap';
-
-
+var TextToolTip = require("TextToolTip");
+import { Nav, Navbar, NavItem, FormGroup, FormControl , Button,  Jumbotron, Grid, Col, Row } from 'react-bootstrap';
 
 var Main = React.createClass({
     render: function(){
         return (
-        <div>
+<div>
         <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
@@ -22,12 +21,20 @@ var Main = React.createClass({
         <FormGroup>
           <FormControl type="text" placeholder="Search" />
         </FormGroup>
-{/* why? -->  {' '}      */}
+          {' '}  {/* why? -->  {' '}      */}
         <Button type="submit">Search</Button>
       </Navbar.Form>
   </Navbar>
-      <Jumbotron><Data /></Jumbotron>
-       </div>    
+      <Grid>
+        <Row>
+            <Col xs={12}>
+                <Jumbotron>
+                    <TextToolTip />
+                </Jumbotron>
+            </Col>
+        </Row>
+      </Grid>
+</div>    
     );
   }
 });
