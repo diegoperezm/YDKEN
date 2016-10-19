@@ -8,6 +8,7 @@ module.exports = {
     root: __dirname,
     alias: {
       Audio: 'app/components/Audio.jsx',
+      Content: 'app/components/Content.jsx',
       Main: 'app/components/Main.jsx',
       NavBar: 'app/components/NavBar.jsx',
       TextToolTip: 'app/components/TextToolTip.jsx',
