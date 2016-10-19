@@ -38602,6 +38602,7 @@
 
 	var React = __webpack_require__(1);
 
+	var h1Style = { marginBottom: '3rem' };
 
 	var LinkWithTooltip = React.createClass({
 	  displayName: 'LinkWithTooltip',
@@ -38626,7 +38627,13 @@
 	  }
 	});
 
-	var text = React.createElement(
+	var H1 = React.createElement(
+	  'h1',
+	  { style: h1Style },
+	  'You Don\'t Know JS: Scope & Closures: Review (TL;DR)'
+	);
+
+	var pOne = React.createElement(
 	  'p',
 	  null,
 	  React.createElement(
@@ -39150,6 +39157,1829 @@
 	  )
 	);
 
+	var pTwo = React.createElement(
+	  'p',
+	  null,
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u025Bl-e\u026A\u02A7-\u025Bs'
+	      ), id: 'tooltip-0' },
+	    'LHS'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8r\u025Bf\u0259r\u0259ns\u026Az'
+	      ), id: 'tooltip-1' },
+	    'references'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'r\u026A\u02C8z\u028Clt'
+	      ), id: 'tooltip-2' },
+	    'result'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'fr\u0259m'
+	      ), id: 'tooltip-3' },
+	    'from'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259\u02C8sa\u026Anm\u0259nt'
+	      ), id: 'tooltip-4' },
+	    'assignment'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02CC\u0251p\u0259\u02C8re\u026A\u0283\u0259nz.'
+	      ), id: 'tooltip-5' },
+	    'operations.'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'sko\u028Ap-r\u026A\u02C8le\u026At\u026Ad'
+	      ), id: 'tooltip-6' },
+	    'Scope-related'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259\u02C8sa\u026Anm\u0259nts'
+	      ), id: 'tooltip-7' },
+	    'assignments'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'k\u0259n'
+	      ), id: 'tooltip-8' },
+	    'can'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259\u02C8k\u025Cr'
+	      ), id: 'tooltip-9' },
+	    'occur'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8i\xF0\u0259r'
+	      ), id: 'tooltip-10' },
+	    'either'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'w\u026A\xF0'
+	      ), id: 'tooltip-11' },
+	    'with'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0i'
+	      ), id: 'tooltip-12' },
+	    'the'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '='
+	      ), id: 'tooltip-13' },
+	    '='
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u0251p\u0259\u02CCre\u026At\u0259r'
+	      ), id: 'tooltip-14' },
+	    'operator'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0254r'
+	      ), id: 'tooltip-15' },
+	    'or'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ba\u026A'
+	      ), id: 'tooltip-16' },
+	    'by'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8p\xE6s\u026A\u014B'
+	      ), id: 'tooltip-17' },
+	    'passing'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u0251rgj\u0259m\u0259nts'
+	      ), id: 'tooltip-18' },
+	    'arguments'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        't\u028A'
+	      ), id: 'tooltip-19' },
+	    'to'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(\u0259\u02C8sa\u026An'
+	      ), id: 'tooltip-20' },
+	    '(assign'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        't\u028A)'
+	      ), id: 'tooltip-21' },
+	    'to)'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8f\u028C\u014Bk\u0283\u0259n'
+	      ), id: 'tooltip-22' },
+	    'function'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'p\u0259\u02C8r\xE6m\u0259t\u0259rz.'
+	      ), id: 'tooltip-23' },
+	    'parameters.'
+	  ),
+	  ' '
+	);
+
+	var pThree = React.createElement(
+	  'p',
+	  null,
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259'
+	      ), id: 'tooltip-0' },
+	    'The'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u02A4\u0251v\u0259\u02CCskr\u026Apt'
+	      ), id: 'tooltip-1' },
+	    'JavaScript'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u025Bn\u02A4\u0259n'
+	      ), id: 'tooltip-2' },
+	    'Engine'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'f\u025Crst'
+	      ), id: 'tooltip-3' },
+	    'first'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'k\u0259m\u02C8pa\u026Alz'
+	      ), id: 'tooltip-4' },
+	    'compiles'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ko\u028Ad'
+	      ), id: 'tooltip-5' },
+	    'code'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'b\u026A\u02C8f\u0254r'
+	      ), id: 'tooltip-6' },
+	    'before'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026At'
+	      ), id: 'tooltip-7' },
+	    'it'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u025Bks\u0259\u02CCkjuts,'
+	      ), id: 'tooltip-8' },
+	    'executes,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-9' },
+	    'and'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026An'
+	      ), id: 'tooltip-10' },
+	    'in'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'so\u028A'
+	      ), id: 'tooltip-11' },
+	    'so'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8du\u026A\u014B,'
+	      ), id: 'tooltip-12' },
+	    'doing,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026At'
+	      ), id: 'tooltip-13' },
+	    'it'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'spl\u026Ats'
+	      ), id: 'tooltip-14' },
+	    'splits'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u028Cp'
+	      ), id: 'tooltip-15' },
+	    'up'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8ste\u026Atm\u0259nts'
+	      ), id: 'tooltip-16' },
+	    'statements'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'la\u026Ak'
+	      ), id: 'tooltip-17' },
+	    'like'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'var'
+	      ), id: 'tooltip-18' },
+	    'var'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'e\u026A'
+	      ), id: 'tooltip-19' },
+	    'a'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '='
+	      ), id: 'tooltip-20' },
+	    '='
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '2;'
+	      ), id: 'tooltip-21' },
+	    '2;'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u026Ant\u0259'
+	      ), id: 'tooltip-22' },
+	    'into'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'tu'
+	      ), id: 'tooltip-23' },
+	    'two'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8s\u025Bpr\u0259t'
+	      ), id: 'tooltip-24' },
+	    'separate'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'st\u025Bps:'
+	      ), id: 'tooltip-25' },
+	    'steps:'
+	  ),
+	  ' '
+	);
+
+	var oL = React.createElement(
+	  'ol',
+	  null,
+	  React.createElement(
+	    'li',
+	    null,
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'f\u025Crst,'
+	        ), id: 'tooltip-0' },
+	      'First,'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'var'
+	        ), id: 'tooltip-1' },
+	      'var'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u0259'
+	        ), id: 'tooltip-2' },
+	      'a'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          't\u0259'
+	        ), id: 'tooltip-3' },
+	      'to'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'd\u026A\u02C8kl\u025Br'
+	        ), id: 'tooltip-4' },
+	      'declare'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u026At'
+	        ), id: 'tooltip-5' },
+	      'it'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u026An'
+	        ), id: 'tooltip-6' },
+	      'in'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\xF0\u0259t'
+	        ), id: 'tooltip-7' },
+	      'that'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'sko\u028Ap.'
+	        ), id: 'tooltip-8' },
+	      'Scope.'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\xF0\u026As'
+	        ), id: 'tooltip-9' },
+	      'This'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u026Az'
+	        ), id: 'tooltip-10' },
+	      'is'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'p\u0259r\u02C8f\u0254rmd'
+	        ), id: 'tooltip-11' },
+	      'performed'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u0259t'
+	        ), id: 'tooltip-12' },
+	      'at'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\xF0\u0259'
+	        ), id: 'tooltip-13' },
+	      'the'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'b\u026A\u02C8g\u026An\u026A\u014B,'
+	        ), id: 'tooltip-14' },
+	      'beginning,'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'b\u026A\u02C8f\u0254r'
+	        ), id: 'tooltip-15' },
+	      'before'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'ko\u028Ad'
+	        ), id: 'tooltip-16' },
+	      'code'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u02CC\u025Bks\u0259\u02C8kju\u0283\u0259n.'
+	        ), id: 'tooltip-17' },
+	      'execution.'
+	    ),
+	    ' '
+	  ),
+	  React.createElement(
+	    'li',
+	    null,
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u02C8le\u026At\u0259r,'
+	        ), id: 'tooltip-0' },
+	      'Later,'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'e\u026A'
+	        ), id: 'tooltip-1' },
+	      'a'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '='
+	        ), id: 'tooltip-2' },
+	      '='
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '2'
+	        ), id: 'tooltip-3' },
+	      '2'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          't\u0259'
+	        ), id: 'tooltip-4' },
+	      'to'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'l\u028Ak'
+	        ), id: 'tooltip-5' },
+	      'look'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u028Cp'
+	        ), id: 'tooltip-6' },
+	      'up'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\xF0\u0259'
+	        ), id: 'tooltip-7' },
+	      'the'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u02C8v\u025Bri\u0259b\u0259l'
+	        ), id: 'tooltip-8' },
+	      'variable'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '(\u025Bl-e\u026A\u02A7-\u025Bs'
+	        ), id: 'tooltip-9' },
+	      '(LHS'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u02C8r\u025Bf\u0259r\u0259ns)'
+	        ), id: 'tooltip-10' },
+	      'reference)'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u0259nd'
+	        ), id: 'tooltip-11' },
+	      'and'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u0259\u02C8sa\u026An'
+	        ), id: 'tooltip-12' },
+	      'assign'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          't\u028A'
+	        ), id: 'tooltip-13' },
+	      'to'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u026At'
+	        ), id: 'tooltip-14' },
+	      'it'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          '\u026Af'
+	        ), id: 'tooltip-15' },
+	      'if'
+	    ),
+	    ' ',
+	    React.createElement(
+	      LinkWithTooltip,
+	      { tooltip: React.createElement(
+	          'span',
+	          null,
+	          'fa\u028And.'
+	        ), id: 'tooltip-16' },
+	      'found.'
+	    ),
+	    ' '
+	  )
+	);
+
+	var pFour = React.createElement(
+	  'p',
+	  null,
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'bo\u028A\u03B8'
+	      ), id: 'tooltip-0' },
+	    'Both'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u025Bl-e\u026A\u02A7-\u025Bs'
+	      ), id: 'tooltip-1' },
+	    'LHS'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-2' },
+	    'and'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0251r-e\u026A\u02A7-\u025Bs'
+	      ), id: 'tooltip-3' },
+	    'RHS'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8r\u025Bf\u0259r\u0259ns'
+	      ), id: 'tooltip-4' },
+	    'reference'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'l\u028Ak-\u028Cps'
+	      ), id: 'tooltip-5' },
+	    'look-ups'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'st\u0251rt'
+	      ), id: 'tooltip-6' },
+	    'start'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259t'
+	      ), id: 'tooltip-7' },
+	    'at'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259'
+	      ), id: 'tooltip-8' },
+	    'the'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8k\u025Cr\u0259ntli'
+	      ), id: 'tooltip-9' },
+	    'currently'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8\u025Bks\u0259\u02CCkjut\u026A\u014B'
+	      ), id: 'tooltip-10' },
+	    'executing'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'sko\u028Ap,'
+	      ), id: 'tooltip-11' },
+	    'Scope,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-12' },
+	    'and'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026Af'
+	      ), id: 'tooltip-13' },
+	    'if'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'nid'
+	      ), id: 'tooltip-14' },
+	    'need'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'bi'
+	      ), id: 'tooltip-15' },
+	    'be'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(\xF0\xE6t'
+	      ), id: 'tooltip-16' },
+	    '(that'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026Az,'
+	      ), id: 'tooltip-17' },
+	    'is,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0e\u026A'
+	      ), id: 'tooltip-18' },
+	    'they'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'do\u028Ant'
+	      ), id: 'tooltip-19' },
+	    'don\'t'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'fa\u026And'
+	      ), id: 'tooltip-20' },
+	    'find'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'w\u028Ct'
+	      ), id: 'tooltip-21' },
+	    'what'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u025Br'
+	      ), id: 'tooltip-22' },
+	    'they\'re'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8l\u028Ak\u026A\u014B'
+	      ), id: 'tooltip-23' },
+	    'looking'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'f\u0259r'
+	      ), id: 'tooltip-24' },
+	    'for'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u025Br),'
+	      ), id: 'tooltip-25' },
+	    'there),'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0e\u026A'
+	      ), id: 'tooltip-26' },
+	    'they'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'w\u025Crk'
+	      ), id: 'tooltip-27' },
+	    'work'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u025Br'
+	      ), id: 'tooltip-28' },
+	    'their'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'we\u026A'
+	      ), id: 'tooltip-29' },
+	    'way'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u028Cp'
+	      ), id: 'tooltip-30' },
+	    'up'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259'
+	      ), id: 'tooltip-31' },
+	    'the'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8n\u025Bst\u0259d'
+	      ), id: 'tooltip-32' },
+	    'nested'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'sko\u028Ap,'
+	      ), id: 'tooltip-33' },
+	    'Scope,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'w\u028Cn'
+	      ), id: 'tooltip-34' },
+	    'one'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'sko\u028Ap'
+	      ), id: 'tooltip-35' },
+	    'scope'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(fl\u0254r)'
+	      ), id: 'tooltip-36' },
+	    '(floor)'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259t'
+	      ), id: 'tooltip-37' },
+	    'at'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259'
+	      ), id: 'tooltip-38' },
+	    'a'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ta\u026Am,'
+	      ), id: 'tooltip-39' },
+	    'time,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8l\u028Ak\u026A\u014B'
+	      ), id: 'tooltip-40' },
+	    'looking'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'f\u0259r'
+	      ), id: 'tooltip-41' },
+	    'for'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0i'
+	      ), id: 'tooltip-42' },
+	    'the'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'a\u026A\u02C8d\u025Bnt\u0259\u02CCfa\u026A\u0259r,'
+	      ), id: 'tooltip-43' },
+	    'identifier,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259n\u02C8t\u026Al'
+	      ), id: 'tooltip-44' },
+	    'until'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0e\u026A'
+	      ), id: 'tooltip-45' },
+	    'they'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'g\u025Bt'
+	      ), id: 'tooltip-46' },
+	    'get'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        't\u0259'
+	      ), id: 'tooltip-47' },
+	    'to'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259'
+	      ), id: 'tooltip-48' },
+	    'the'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8glo\u028Ab\u0259l'
+	      ), id: 'tooltip-49' },
+	    'global'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(t\u0251p'
+	      ), id: 'tooltip-50' },
+	    '(top'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'fl\u0254r)'
+	      ), id: 'tooltip-51' },
+	    'floor)'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-52' },
+	    'and'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'st\u0251p,'
+	      ), id: 'tooltip-53' },
+	    'stop,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259nd'
+	      ), id: 'tooltip-54' },
+	    'and'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8i\xF0\u0259r'
+	      ), id: 'tooltip-55' },
+	    'either'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'fa\u026And'
+	      ), id: 'tooltip-56' },
+	    'find'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026At,'
+	      ), id: 'tooltip-57' },
+	    'it,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0254r'
+	      ), id: 'tooltip-58' },
+	    'or'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'do\u028Ant.'
+	      ), id: 'tooltip-59' },
+	    'don\'t.'
+	  ),
+	  ' '
+	);
+
+	var pFive = React.createElement(
+	  'p',
+	  null,
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02CC\u028Cnf\u028Al\u02C8f\u026Ald'
+	      ), id: 'tooltip-0' },
+	    'Unfulfilled'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0251r-e\u026A\u02A7-\u025Bs'
+	      ), id: 'tooltip-1' },
+	    'RHS'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8r\u025Bf\u0259r\u0259ns\u026Az'
+	      ), id: 'tooltip-2' },
+	    'references'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'r\u026A\u02C8z\u028Clt'
+	      ), id: 'tooltip-3' },
+	    'result'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026An'
+	      ), id: 'tooltip-4' },
+	    'in'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ReferenceErrors'
+	      ), id: 'tooltip-5' },
+	    'ReferenceErrors'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8bi\u026A\u014B'
+	      ), id: 'tooltip-6' },
+	    'being'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u03B8ro\u028An.'
+	      ), id: 'tooltip-7' },
+	    'thrown.'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02CC\u028Cnf\u028Al\u02C8f\u026Ald'
+	      ), id: 'tooltip-8' },
+	    'Unfulfilled'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u025Bl-e\u026A\u02A7-\u025Bs'
+	      ), id: 'tooltip-9' },
+	    'LHS'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8r\u025Bf\u0259r\u0259ns\u026Az'
+	      ), id: 'tooltip-10' },
+	    'references'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'r\u026A\u02C8z\u028Clt'
+	      ), id: 'tooltip-11' },
+	    'result'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026An'
+	      ), id: 'tooltip-12' },
+	    'in'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259n'
+	      ), id: 'tooltip-13' },
+	    'an'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02CC\u0254t\u0259\u02C8m\xE6t\u026Ak,'
+	      ), id: 'tooltip-14' },
+	    'automatic,'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026Am\u02C8pl\u026As\u0259tli-kri\u02C8e\u026At\u0259d'
+	      ), id: 'tooltip-15' },
+	    'implicitly-created'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u02C8glo\u028Ab\u0259l'
+	      ), id: 'tooltip-16' },
+	    'global'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259v'
+	      ), id: 'tooltip-17' },
+	    'of'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\xF0\u0259t'
+	      ), id: 'tooltip-18' },
+	    'that'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ne\u026Am'
+	      ), id: 'tooltip-19' },
+	    'name'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(\u026Af'
+	      ), id: 'tooltip-20' },
+	    '(if'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'n\u0251t'
+	      ), id: 'tooltip-21' },
+	    'not'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026An'
+	      ), id: 'tooltip-22' },
+	    'in'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '"str\u026Akt'
+	      ), id: 'tooltip-23' },
+	    '"Strict'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'mo\u028Ad"'
+	      ), id: 'tooltip-24' },
+	    'Mode"'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '[^no\u028At-strictmode]),'
+	      ), id: 'tooltip-25' },
+	    '[^note-strictmode]),'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0254r'
+	      ), id: 'tooltip-26' },
+	    'or'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u0259'
+	      ), id: 'tooltip-27' },
+	    'a'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'ReferenceError'
+	      ), id: 'tooltip-28' },
+	    'ReferenceError'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '(\u026Af'
+	      ), id: 'tooltip-29' },
+	    '(if'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '\u026An'
+	      ), id: 'tooltip-30' },
+	    'in'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '"str\u026Akt'
+	      ), id: 'tooltip-31' },
+	    '"Strict'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        'mo\u028Ad"'
+	      ), id: 'tooltip-32' },
+	    'Mode"'
+	  ),
+	  ' ',
+	  React.createElement(
+	    LinkWithTooltip,
+	    { tooltip: React.createElement(
+	        'span',
+	        null,
+	        '[^no\u028At-strictmode]).'
+	      ), id: 'tooltip-33' },
+	    '[^note-strictmode]).'
+	  ),
+	  ' '
+	);
+
 	var TextToolTip = React.createClass({
 	  displayName: 'TextToolTip',
 
@@ -39157,7 +40987,13 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      text
+	      H1,
+	      pOne,
+	      pTwo,
+	      pThree,
+	      oL,
+	      pFour,
+	      pFive
 	    );
 	  }
 	});
@@ -39166,9 +41002,9 @@
 
 	/*
 
-	  <LinkWithTooltip tooltip="Default tooltip" href="#" id="tooltip-1">you probably</LinkWithTooltip>
+	  <LinkWithTooltip tooltip="Default tooltip" href="#" id="tooltip-1">you probably</LinkWithTooltip>{"\u0020"}{"\u0020"}
 	  
-	  <LinkWithTooltip tooltip={<span>Another <strong>tooltip</strong></span>} href="#" id="tooltip-2">have a</LinkWithTooltip>
+	  <LinkWithTooltip tooltip={<span>Another <strong>tooltip</strong></span>} href="#" id="tooltip-2">have a</LinkWithTooltip>{"\u0020"}{"\u0020"}
 	  
 	  <LinkWithTooltip tooltip="Another one here too" href="#" id="tooltip-3">whatever keytar</LinkWithTooltip>
 	  
