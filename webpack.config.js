@@ -7,10 +7,11 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
+      Audio: 'app/components/Audio.jsx',
       Main: 'app/components/Main.jsx',
-      Test: 'app/components/Test.jsx',
-      Data: 'app/components/Data.jsx',
-      TextToolTip: 'app/components/TextToolTip.jsx'
+      NavBar: 'app/components/NavBar.jsx',
+      TextToolTip: 'app/components/TextToolTip.jsx',
+      
     },
     extensions: ['', '.js', '.jsx']
   },
