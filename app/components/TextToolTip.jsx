@@ -17,13 +17,19 @@ const LinkWithTooltip = React.createClass({
 });
 
 
+var H1 = React.createClass({
+  render: function () {
+    return (
+      <h1 style={h1Style}>You Don't Know JS: Scope & Closures: Review (TL;DR)</h1>
+    );
+  }
+});
+  
 
-const H1 = (
-  <h1 style={h1Style}>You Don't Know JS: Scope & Closures: Review (TL;DR)</h1>
-);
-
-const pOne = (
-  <p>
+var Pone = React.createClass({
+  render: function () {
+    return (
+<p>
 <LinkWithTooltip tooltip={<span>skoʊp</span>} id="tooltip-0">Scope</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>əz</span>} id="tooltip-1">is</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ðə</span>} id="tooltip-2">the</LinkWithTooltip>{"\u0020"}
@@ -77,10 +83,14 @@ const pOne = (
 <LinkWithTooltip tooltip={<span>(raɪt-hænd-saɪd)</span>} id="tooltip-50">(right-hand-side)</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ˈrɛfərəns.</span>} id="tooltip-51">reference.</LinkWithTooltip>
 </p>
-);
+    );
+  }
+});
 
-const pTwo = (
-  <p>
+var Ptwo = React.createClass({
+  render: function () {
+    return (
+<p>
 <LinkWithTooltip tooltip={<span>ɛl-eɪʧ-ɛs</span>} id="tooltip-52">LHS</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ˈrɛfərənsɪz</span>} id="tooltip-53">references</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>rɪˈzʌlt</span>} id="tooltip-54">result</LinkWithTooltip>{"\u0020"}
@@ -106,10 +116,16 @@ const pTwo = (
 <LinkWithTooltip tooltip={<span>ˈfʌŋkʃən</span>} id="tooltip-73">function</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>pəˈræmətərz.</span>} id="tooltip-74">parameters.</LinkWithTooltip>{"\u0020"}
 </p>
-);
+    );
+  }
+});
 
-const pThree = (
-  <p>
+
+
+var Pthree = React.createClass({
+  render: function() {
+    return (
+<p>
 <LinkWithTooltip tooltip={<span>ðə</span>} id="tooltip-75">The</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ˈʤɑvəˌskrɪpt</span>} id="tooltip-76">JavaScript</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ˈɛnʤən</span>} id="tooltip-77">Engine</LinkWithTooltip>{"\u0020"}
@@ -137,9 +153,14 @@ const pThree = (
 <LinkWithTooltip tooltip={<span>ˈsɛprət</span>} id="tooltip-99">separate</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>stɛps:</span>} id="tooltip-100">steps:</LinkWithTooltip>{"\u0020"}
 </p>
-);
+    );
+  }
+});
 
-const oL = (
+
+var Ol = React.createClass({
+  render: function(){
+    return (
  <ol>
     <li><LinkWithTooltip tooltip={<span>fɜrst,</span>} id="tooltip-0">First,</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>var</span>} id="tooltip-101">var</LinkWithTooltip>{"\u0020"}
@@ -177,9 +198,14 @@ const oL = (
 <LinkWithTooltip tooltip={<span>ɪf</span>} id="tooltip-133">if</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>faʊnd.</span>} id="tooltip-134">found.</LinkWithTooltip>{"\u0020"}</li>
   </ol>  
-);
+    );
+  }
+});
 
-const pFour= (
+
+var Pfour = React.createClass({
+  render: function(){
+    return (
 <p>  
 <LinkWithTooltip tooltip={<span>boʊθ</span>} id="tooltip-135">Both</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ɛl-eɪʧ-ɛs</span>} id="tooltip-136">LHS</LinkWithTooltip>{"\u0020"}
@@ -242,9 +268,13 @@ const pFour= (
 <LinkWithTooltip tooltip={<span>ɔr</span>} id="tooltip-196">or</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>doʊnt.</span>} id="tooltip-197">don't.</LinkWithTooltip>{"\u0020"}
 </p>
-);
+    );
+  }
+});
 
-const pFive = (
+var Pfive = React.createClass({
+  render: function(){
+    return (
 <p>
 <LinkWithTooltip tooltip={<span>ˌʌnfʊlˈfɪld</span>} id="tooltip-198">Unfulfilled</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>ɑr-eɪʧ-ɛs</span>} id="tooltip-199">RHS</LinkWithTooltip>{"\u0020"}
@@ -281,22 +311,22 @@ const pFive = (
 <LinkWithTooltip tooltip={<span>moʊd"</span>} id="tooltip-230">Mode"</LinkWithTooltip>{"\u0020"}
 <LinkWithTooltip tooltip={<span>[^noʊt-strictmode]).</span>} id="tooltip-231">[^note-strictmode]).</LinkWithTooltip>{"\u0020"}
 </p>
-);
-
-
+    );
+  }
+});
 
 
 var TextToolTip = React.createClass({
   render: function() {
     return (
       <div>
-        {H1}
-        {pOne}
-        {pTwo}
-        {pThree}
-        {oL}
-        {pFour}
-        {pFive}
+        <H1 />
+        <Pone />
+        <Ptwo />
+        <Pthree />
+        <Ol />
+        <Pfour />
+        <Pfive />
       </div>);
     }
 });
