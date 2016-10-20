@@ -41042,19 +41042,6 @@
 
 	module.exports = TextToolTip;
 
-	/*
-
-	  <LinkWithTooltip tooltip="Default tooltip" href="#" id="tooltip-1">you probably</LinkWithTooltip>{"\u0020"}{"\u0020"}
-	  
-	  <LinkWithTooltip tooltip={<span>Another <strong>tooltip</strong></span>} href="#" id="tooltip-2">have a</LinkWithTooltip>{"\u0020"}{"\u0020"}
-	  
-	  <LinkWithTooltip tooltip="Another one here too" href="#" id="tooltip-3">whatever keytar</LinkWithTooltip>
-	  
-	  <LinkWithTooltip tooltip="The last tip!" href="#" id="tooltip-4">twitter handle</LinkWithTooltip>
-	  
-	);
-	*/
-
 /***/ },
 /* 414 */
 /***/ function(module, exports, __webpack_require__) {
