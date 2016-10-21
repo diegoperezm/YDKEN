@@ -9,6 +9,7 @@ module.exports = {
     alias: {
       Audio: 'app/components/Audio.jsx',
       Content: 'app/components/Content.jsx',
+      FormText: 'app/components/FormText.jsx',
       Main: 'app/components/Main.jsx',
       NavBar: 'app/components/NavBar.jsx',
       TextToolTip: 'app/components/TextToolTip.jsx',
