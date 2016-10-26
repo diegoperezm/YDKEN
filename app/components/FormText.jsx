@@ -1,4 +1,4 @@
-/* This is temporal, I need to refactor this code*/
+/* This is temporary, I need to refactor this code*/
 
 var React = require("react");
 
@@ -36,7 +36,7 @@ var FormText = React.createClass({
         <audio 
       controls
       src= {src}
-      autoplay>
+         >
           Your browser does not support the <code>audio</code> element.
  </audio>
           <form onSubmit={this.handleSubmit}>
