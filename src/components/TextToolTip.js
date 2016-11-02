@@ -333,9 +333,4 @@ var TextToolTip = React.createClass({
 });
 
 
-module.exports = TextToolTip;
-
-
-
-
-
+export default TextToolTip;

@@ -1,11 +1,11 @@
-var React = require("react");
-var TextToolTip = require("TextToolTip");
+import React from 'react';
+import TextToolTip from './TextToolTip.js';
 import { Jumbotron, Grid, Col, Row } from 'react-bootstrap';
 
-var Content = React.createClass({
-    render: function() {
-        return (
-<div>            
+class Content extends React.Component {
+    render(){
+        return(
+          <div>            
             <Grid>
                 <Row>
                     <Col xs={12}>
@@ -15,13 +15,9 @@ var Content = React.createClass({
                     </Col>
                 </Row>
             </Grid>
-</div>            
-        );
+           </div>    
+       );
     }
-});
+}
 
-
-
-        
-
-module.exports = Content;
+export default Content;
